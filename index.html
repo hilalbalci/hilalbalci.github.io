@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tessera — Word Games</title>
+  <meta name="description" content="Tessera is a collection of four endless puzzle games — Wordle, Quordle, Nerdle, and Guess the Angle — in one clean, minimal app." />
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --ink: #131312;
+      --ink2: #565654;
+      --accent: #6a8e7f;
+      --border: #e6e3de;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #131312; --ink: #faf9f7; --ink2: #a8a6a2; --border: #2a2a28; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 24px;
+      text-align: center;
+    }
+    main { max-width: 480px; }
+    h1 { font-size: 2.5rem; margin: 0 0 0.25em; letter-spacing: -0.02em; }
+    .tag { color: var(--accent); font-weight: 600; margin: 0 0 1.5em; }
+    p { color: var(--ink2); line-height: 1.6; margin: 0 0 1.5em; }
+    .games { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 2em; }
+    .chip {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+    .links a {
+      color: var(--ink2);
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin: 0 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+    }
+    .links a:hover { color: var(--accent); }
+    footer { margin-top: 3em; color: var(--ink2); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tessera</h1>
+    <p class="tag">Word &amp; number puzzles, endlessly.</p>
+    <p>Four calm, minimal puzzle games in one app — play as many rounds as you like, any time.</p>
+    <div class="games">
+      <span class="chip">Wordle</span>
+      <span class="chip">Quordle</span>
+      <span class="chip">Nerdle</span>
+      <span class="chip">Guess the Angle</span>
+    </div>
+    <p class="links">
+      <!-- Replace # with your App Store link, and your Notion privacy/terms pages -->
+      <a href="#">App Store</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </p>
+  </main>
+  <footer>© 2026 Hilal Balci</footer>
+</body>
+</html>
